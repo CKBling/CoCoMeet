@@ -12,12 +12,9 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
     "react-sortable-tree": "^2.8.0",
-<<<<<<< HEAD
-    "react-splitter-layout": "^4.0.0"
-=======
     "react-splitter-layout": "^4.0.0",
     "socket.io": "^2.3.0"
->>>>>>> b605178a18c52dfeb8037a65a556aff049d02745
+
   },
   "scripts": {
     "start": "react-scripts start",
