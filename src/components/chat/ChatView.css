@@ -1,0 +1,87 @@
+.body{
+    overflow: hidden;
+}
+::-webkit-scrollbar {width: 8px; height: 8px; border: 3px solid #fff; }
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {display:none;}
+::-webkit-scrollbar-track {background: #efefef; border-radius:10px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.2)}
+::-webkit-scrollbar-thumb {height: 50px; width: 50px; background: rgba(0,0,0,.2); border-radius: 8px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.1)}
+.chattingView-chatbox{
+    height: 530px;
+    width: 400px;
+    position:relative;
+    z-index: 1;
+    margin: auto;
+}
+.chattingView-chatbox:after{
+    z-index: -1;
+    background-repeat:no-repeat;
+    background: url('./chuchuchu.jpg');
+    background-size: contain;
+    position: absolute;
+    content:"";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter:alpha(opacity=30);
+}
+.chattingView-chat{
+    position: absolute;
+    bottom: 0px;
+    max-height: 600px;
+    padding-top: 10px;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+div.chattingView-header{
+    display: -ms-flexbox;
+    display: flex;
+}
+div.chattingView-header div:first-child{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+div.chattingView-header div:last-child{
+    margin-top: 2px;
+    font-size:12px;
+}
+div.chattingView-msg{
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 15px;
+    background: rgba(146, 146, 146, 0.301);
+    border-radius: 10px;
+    font-weight: bold;
+    max-width:380px;
+    overflow-wrap: break-word;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.chattingView-input{
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1px auto;
+    width: 400px;
+}
+
+input.form-control-inputMsg{
+    width: 291px;
+    height: 75px;
+    font-size: large;
+}
+input.form-control-inputMsg:focus{
+    border: solid 2px #d2691e;
+}
+
+button.btn-btn-primary{
+    height: 79px;
+    width: 43px;
+    text-align: left;
+    padding-left: 4px;
+}

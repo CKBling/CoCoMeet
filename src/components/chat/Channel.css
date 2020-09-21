@@ -1,0 +1,18 @@
+.Channel-header {
+    background-color: #222;
+    height: 90px;
+    padding: 10px;
+    color: white;
+}
+
+.Channel-title {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.Channel-header input {
+    color: black;
+    font-size: large;
+    position: relative;
+    left: 50px;
+}
